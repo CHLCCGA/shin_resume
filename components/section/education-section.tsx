@@ -5,7 +5,7 @@ import Section from "./section";
 const education: EducationProps[] = [
   {
     title: "M.S. Computer Science",
-    GPA: "GPA: 3/4.0", 
+    gpa: "GPA: 3/4.0", 
     org: {
       name: "University of Łódź",
       logo: "/images/logos/ul.png",
@@ -14,7 +14,7 @@ const education: EducationProps[] = [
   },
   {
     title: "BSc Mathematics",
-    GPA: "GPA: 3/4.0",
+    gpa: "GPA: 3/4.0",
     org: {
       name: "Tiangong University",
       logo: "/images/logos/tu.jpg",
@@ -23,7 +23,7 @@ const education: EducationProps[] = [
   },
   {
     title: "Visiting student",
-    GPA: "GPA: 3/4.0",
+    gpa: "GPA: 3/4.0",
     org: {
       name: "Politechnika Krakowska",
       logo: "/images/logos/pk.png",
