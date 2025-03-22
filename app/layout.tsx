@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Your Name | React Resume",
+  title: "Xinyu Geng | React Resume",
   description: "Powered by React-to-Print, Next.js, Tailwind CSS",
 };
 
