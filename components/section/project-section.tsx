@@ -59,6 +59,7 @@ export default async function ProjectSection() {
         <LabelWithGraphic
           icon={Icons.Star}
           content={`# Github Stars: ${await getStarNumber(
+            "CHLCCGA",
             "LBGCN"
           )}`}
         />
