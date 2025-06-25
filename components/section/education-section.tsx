@@ -13,7 +13,7 @@ const education: EducationProps[] = [
     time: "Oct 2022 - Oct 2024.",
   },
   {
-    title: "BSc Mathematics",
+    title: "BSc Mathematics ESI 1%",
     gpa: "GPA: 3/4.0",
     org: {
       name: "Tiangong University",
