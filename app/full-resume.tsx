@@ -7,6 +7,7 @@ import SkillSection from "@/components/section/skill-section";
 import WorkSection from "@/components/section/work-section";
 import ProjectSection from "@/components/section/project-section";
 import EducationSection from "@/components/section/education-section";
+import ResearchInterestsSection from "@/components/section/research-interests-section";
 
 type Props = {
   usage: "live" | "pdf";
@@ -16,23 +17,24 @@ type ResumeHeaderProps = {
   usage: "live" | "pdf";
 };
 
-// You can add more type definitions here by using OR (|) operator
 type ComponentProps = ResumeHeaderProps;
 
 type AnimatedComponent = {
-  component: React.FC<ComponentProps>; // React functional component
-  props?: ComponentProps; // optional props
-  delay: number; // delay for animation
+  component: React.FC<ComponentProps>;
+  props?: ComponentProps;
+  delay: number;
 };
 
 export const FullResume = React.forwardRef(({ usage }: Props, ref) => {
   const animatedComponents: AnimatedComponent[] = [
     { component: HeaderSection, props: { usage }, delay: 0.1 },
-    { component: SkillSection, delay: 0.3 },
-    { component: WorkSection, delay: 0.5 },
-    { component: ProjectSection, delay: 0.7 },
-    { component: EducationSection, delay: 0.9 },
+    { component: EducationSection, delay: 0.3 },
+    { component: ResearchInterestsSection, delay: 0.5 },
+    { component: WorkSection, delay: 0.7 },
+    { component: SkillSection, delay: 0.9 },
+    { component: ProjectSection, delay: 1.1 },
   ];
+
   return (
     <Container
       className="mt-9 max-w-6xl mx-auto"
@@ -45,7 +47,6 @@ export const FullResume = React.forwardRef(({ usage }: Props, ref) => {
               <Component {...props} />
             </Motion>
           ) : (
-            // disable animation for pdf
             <Component key={index} {...props} />
           )
       )}

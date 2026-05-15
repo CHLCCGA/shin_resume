@@ -1,3 +1,5 @@
+type ResumeImageSrc = import("next/image").ImageProps["src"];
+
 type ExperienceProps = {
   head1: string | JSX.Element;
   head2?: string | JSX.Element;
@@ -8,7 +10,8 @@ type ExperienceProps = {
 
 type EducationProps = {
   title: string;
-  gpa: string;
-  org: { name: string; logo: ImageProps["src"] };
+  gpa?: string;
+  org: { name: string; logo?: ResumeImageSrc };
   time: string;
+  detail?: string;
 };
